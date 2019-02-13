@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="A Nombre de:" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="textAutoComplete"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dia de Llegada:" />
+
+    <Button
+        android:id="@+id/btnLlegadaDia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="dd - MMMM – yyyy" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora de llegada:" />
+
+    <Button
+        android:id="@+id/btnLlegadaHora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="HH:mm" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dia de Partida:" />
+
+    <Button
+        android:id="@+id/btnPartidaDia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="dd - MMMM – yyyy" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora de Partida:" />
+
+    <Button
+        android:id="@+id/btnPartidaHora"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="HH:mm" />
+    <TextView
+        android:id="@+id/textViewAcom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Acompaniantes: %d" />
+
+    <SeekBar
+        android:id="@+id/seekBarAcom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:min="0"
+        android:progress="1" />
+
+    <Switch
+        android:id="@+id/switchTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Todo incluido"
+        android:textOff="No"
+        android:textOn="Si" />
+
+    <TextView
+        android:id="@+id/textViewHabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habitaciones: %d" />
+
+    <SeekBar
+        android:id="@+id/seekBarHabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:min="1"
+        android:progress="1" />
+
+    <Button
+        android:id="@+id/btnReserva"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:onClick="reserva"
+        android:text="Hacer Reservacion" />
+
+</LinearLayout>
